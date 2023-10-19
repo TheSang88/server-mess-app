@@ -47,7 +47,7 @@ const socketServer = createServer(app);
 
 const io = new Server(socketServer, {
     cors: {
-        origin: ["http://localhost:3000", "client-mess-app.vercel.app"],
+        origin: ["http://localhost:3000", "https://client-mess-app.vercel.app"],
         methods: ["GET", "POST"],
     },
 });
